@@ -1,0 +1,52 @@
+Mode,Hours,2024 Distance (miles),2024 Emissions (tCO2e),2019 Miles,2019 Emissions,Difference - Miles,Difference - Emissions,,,,,,,,,,,,,,,
+Subway,"5,993,494","101,889,398","5,950.34","96,088,725","5,544",6.04%,7.32%,,,,,,,,,,,,,,,
+Walking,"5,326,801","18,111,123",0.00,"2,950,033",0,513.93%,,,,,,,,,,,,,,,,
+Rail,"1,450,257","50,759,002","5,466.74","37,148,434","4,554",36.64%,20.04%,,,,,,,,,,,,,,,
+Bus,"1,106,731","9,041,994","2,829.24","9,706,362","3,227",-6.84%,-12.34%,,,,,,,,,,,,,,,
+Shuttle,"735,895","6,012,259","1,881.24","1,017,481",679,490.90%,177.06%,,,,,,,,,,,,,,,
+Path,"714,322","12,143,479",809.70,"6,823,515","1,021",77.97%,-20.72%,,,,,,,,,,,,,,,
+Car,"555,825","13,895,615","5,558.25","10,288,653","7,555",35.06%,-26.43%,,,,,,,,,,,,,,,
+Bike,"440,268","4,402,675",0.00,"3,260,496",0,35.03%,,,,,,,,,,,,,,,,
+Taxi,"255,731","3,068,772","1,227.51","1,704,626","1,001",80.03%,22.58%,,,,,,,,,,,,,,,
+Ferry,"99,441","2,336,864",608.26,"524,486",32,345.55%,1818.44%,,,,,,,,,,,,,,,
+Carpool,"39,947","998,675",199.74,,,,,,,,,,,,,,,,,,,
+Micro,"37,466","468,324",15.07,"16,388",0,2757.73%,,,,,,,,,,,,,,,,
+Other,"24,412",0,0.00,,,,,,,,,,,,,,,,,,,
+Motorcycle,"11,090","277,245",110.90,,,,,,,,,,,,,,,,,,,
+,,"223,405,424","24,657","169,529,198","23,614",31.78%,4.42%,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+Mode,MPH Factor,Source,Notes,"Emissions Factor
+(tCO2e per pax mile)",Source,Notes,lbs to metric ton,0.000453592,,,,,,,,,,,,,,
+Subway,17.00 MPH,"https://en.wikipedia.org/wiki/New_York_City_Subway
+https://www.nytimes.com/interactive/2024/06/18/nyregion/nyc-subway-quiz.html
+https://www.nyctransitforums.com/topic/17313-subway-system-average-speed-by-line/",We also compared how long my commute is from home to the office and divided by mileage and got 16 mph (8 miles takes 30 minutes on the subway including waiting time),0.0000584,https://www.mta.info/document/137761,** The CBO report has a lower factor for the NYC Subway system,,,,,,,,,,,,,,,,
+Walking,3.40 MPH,https://archive.nytimes.com/empirezone.blogs.nytimes.com/2007/05/04/the-8th-fastest-walkers-in-the-world/,"I typically walk a mile in 17-20 mins, which equates to 3-3.5 MPH",0.0000000,,,,,,,,,,,,,,,,,,
+Rail,35.00 MPH,"https://www.esparail.org/resources/frequently-asked-questions/#:~:text=South%20of%20Cold%20Spring%20through,of%20Manhattan%20to%20Penn%20Station.","Top speeds on MetroNorth and Amtrak are around 80 MPH. It gets much slower closer to NYC, with trains slowing down to 15 MPH.
+[we measured the distance from Croton-Harmon to Grand Central and compared to its scheduled time]",0.0001077,https://www.mta.info/document/137761,,,,,,,,,,,,,,,,,
+Bus,8.17 MPH,"https://comptroller.nyc.gov/reports/behind-schedule-how-new-york-citys-bus-system-slow-rolls-riders/#:~:text=Bus%20System%20Performance&text=In%202024%2C%20buses%20ran%20at,the%20slowest%2C%20at%206.29%20mph.",,0.0003129,https://www.mta.info/document/137761,,,,,,,,,,,,,,,,,
+Shuttle,8.17 MPH,,same as Bus,0.0003129,https://www.mta.info/document/137761,,,,,,,,,,,,,,,,,
+Path,17.00 MPH,,we looked at PATH schedules and compared to mileage between stations. Hoboken to 33rd Street line operates at roughly 10 MPH; Newark to WTC operates at 21MPH. We've chosen to go with the same speed as the NYC subway system.,0.0000667,https://enotrans.org/article/cbo-releases-overview-of-ghg-emissions-in-transportation/,,,,,,,,,,,,,,,,,
+Car,25.00 MPH,,average in Manhattan CBD is 5-7 MPH; average speed limit in Westchester and Long Island is 45-55 MPH,0.0004000,https://www.epa.gov/greenvehicles/greenhouse-gas-emissions-typical-passenger-vehicle#driving,The average passenger vehicle emits about 400 grams of CO2 per mile,https://www.cbo.gov/system/files/2022-12/58566-co2-emissions-transportation.pdf,This CBO report indicates a much lower emissions factor for cars,,,,,,,,,,,,,,
+Bike,10.00 MPH,"https://en.wikipedia.org/wiki/Citi_Bike#:~:text=Citi%20Bikes%20are%20slower%20than,of%20a%20high%2Dspeed%20collision.",Citibikes average 8.3 MPH whereas regular bikes average 11-12 MPH,0.0000000,,,,,,,,,,,,,,,,,,
+Taxi,12.00 MPH,"https://medium.com/@muhammadaris10/nyc-taxi-trip-data-analysis-45ecfdcb6f91#:~:text=Based%20on%20data%20from%20the,between%2010%20to%2014%20mph.",,0.0004000,https://www.epa.gov/greenvehicles/greenhouse-gas-emissions-typical-passenger-vehicle#driving,,,,,,,,,,,,,,,,,
+Ferry,23.50 MPH,"https://en.wikipedia.org/wiki/NYC_Ferry#:~:text=Ferry%20system%20opened.-,Staten%20Island%20to%20Midtown%20fast%20ferry,/h;%2040%20mph).
+https://www.nyc.gov/html/dot/html/ferrybus/ferry-facts.shtml",Staten Island Ferry has a service speed of 16 knots (18 MPH) while the NYC Ferry has a service speed of 25 knots (29 MPH),0.0002603,https://www.nyc.gov/html/dot/downloads/pdf/ferry-fuel-propulsion-feasibility-study.pdf,"SIF Annual Emissions = 42,500 tCO2e
+SIF ridership in FY23 = 15.7M
+SIF miles traveled per person = 10.4 (one way is 5.2 miles)",,,,,,,,,,,,,,,,
+Carpool,25.00 MPH,,same as Car,0.0002000,https://www.epa.gov/greenvehicles/greenhouse-gas-emissions-typical-passenger-vehicle#driving,half of car emissions factor since there is at least 2 people in the car,,,,,,,,,,,,,,,,
+Micro,12.50 MPH,"https://www.lewis.ucla.edu/wp-content/uploads/sites/13/2018/05/Fang_Faster-than-Walking_Spirng-2018.pdf
+https://comptroller.nyc.gov/reports/street-safety-in-the-era-of-micromobility/","Skateboarders travel between 6-13 MPH, with an average speed of 9.7 MPH (UCLA paper)
+E-scooters can travel 15 MPH in NYC (NYC Comptroller)",0.0000322,https://unagiscooters.com/scooter-articles/scooter-emissions-vs-car-emissions/,we assumed half of all riders were using electric forms of micromobility and half were using human powered; electric scooters use 40g CO2e per pax km,https://iopscience.iop.org/article/10.1088/1748-9326/ab2da8,202 gCO2e per pax mile,,,,,,,,,,,,,,
+Other,,,,,,,,,,,,,,,,,,,,,,
+Motorcycle,25.00 MPH,,same as Car,0.0004000,https://www.epa.gov/greenvehicles/greenhouse-gas-emissions-typical-passenger-vehicle#driving,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,31.5,miles,,,,,,,,,,,,,,,
+,,,,,,0.916666666666667,hours,,55,,,,,,,,,,,,,
+,,,,,,34.3636363636364,,,0.916666666666667,,,,,,,,,,,,,

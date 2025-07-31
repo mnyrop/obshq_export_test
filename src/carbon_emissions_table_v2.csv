@@ -1,0 +1,16 @@
+Mode,Emissions (tCO2e)
+Subway,"3,281.43"
+Walk Only,0
+Rail,"4,182.32"
+Bus,"2,222.40"
+Shuttle,482.57
+Path,408.73
+Car,"3,883.99"
+Electric bike,13.29
+Classic bike,0
+Taxi,491.89
+Ferry,313.29
+Carpool,88.54
+Micro,4.96
+Other,0
+Motorcycle,103.59
